@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://dkb8fwg8pwwxg"]
+
+[ext_resource type="Script" path="res://codes/UnitHouse.gd" id="1_1c563"]
+[ext_resource type="Texture2D" uid="uid://cvnllwbi5v7h3" path="res://resources/Objects/Free_Chicken_House.png" id="1_de6pt"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lsr55"]
+size = Vector2(3.96048, 1.58419)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_uhcof"]
+bg_color = Color(0.6, 0.6, 0.6, 0)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0, 0.964706, 0.180392, 1)
+border_blend = true
+
+[node name="UnitHouse" type="StaticBody2D"]
+position = Vector2(0, 9.53674e-07)
+scale = Vector2(7.57484, 7.57484)
+input_pickable = true
+script = ExtResource("1_1c563")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0.396048, -0.792096)
+shape = SubResource("RectangleShape2D_lsr55")
+
+[node name="FreeChickenHouse" type="Sprite2D" parent="."]
+position = Vector2(0.264032, -1.05613)
+scale = Vector2(0.11873, 0.118445)
+texture = ExtResource("1_de6pt")
+
+[node name="Selected" type="Panel" parent="."]
+offset_left = -1.98024
+offset_top = -3.96048
+offset_right = 9.01976
+offset_bottom = 16.0395
+scale = Vector2(0.41054, 0.290544)
+mouse_filter = 1
+theme_override_styles/panel = SubResource("StyleBoxFlat_uhcof")
+metadata/_edit_use_anchors_ = true
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

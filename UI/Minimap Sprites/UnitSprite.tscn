@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cgkl4al0hx1nr"]
+
+[ext_resource type="Texture2D" uid="uid://b2l37pgtpus56" path="res://resources/24px Mini Characters/images/Characters/Civilian1(black)_Move(Weapon1).png" id="1_fa5sd"]
+
+[node name="Unit" type="Sprite2D"]
+texture = ExtResource("1_fa5sd")
+hframes = 4
+vframes = 8
+region_rect = Rect2(100, 100, 100, 100)

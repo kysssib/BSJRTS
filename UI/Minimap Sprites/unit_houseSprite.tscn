@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://blv3k46tr5hm4"]
+
+[ext_resource type="Texture2D" uid="uid://cvnllwbi5v7h3" path="res://resources/Objects/Free_Chicken_House.png" id="1_uiouf"]
+
+[node name="FreeChickenHouse" type="Sprite2D"]
+texture = ExtResource("1_uiouf")

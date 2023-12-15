@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c0fw7ij4ibb3a"]
+
+[ext_resource type="Texture2D" uid="uid://c2phh24qk3uld" path="res://resources/Objects/Basic Grass Biom things 1.png" id="1_ckowa"]
+
+[node name="Tree" type="Sprite2D"]
+texture = ExtResource("1_ckowa")
+hframes = 9
+vframes = 3
